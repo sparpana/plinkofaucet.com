@@ -8,8 +8,8 @@ jobs:
       - checkout
 
       - run:
-          name: Install pnpm
-          command: npm install -g pnpm
+          name: Enable and activate pnpm via Corepack
+          command: corepack enable && corepack prepare pnpm@8.6.3 --activate
 
       - run:
           name: Install dependencies
