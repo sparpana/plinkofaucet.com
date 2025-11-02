@@ -8,8 +8,10 @@ jobs:
       - checkout
 
       - run:
-          name: Enable and activate pnpm via Corepack
-          command: corepack enable && corepack prepare pnpm@8.6.3 --activate
+          name: Enable Corepack and activate pnpm
+          command: |
+            corepack enable
+            corepack prepare pnpm@8.6.3 --activate
 
       - run:
           name: Install dependencies
