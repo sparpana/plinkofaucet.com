@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   build-and-deploy:
     docker:
-      - image: cimg/node:20.3.0
+      - image: node:20.3.0
     steps:
       - checkout
 
